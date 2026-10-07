@@ -1,0 +1,256 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1791203160396
+  modified: 1791203160396
+  description: ""
+collection:
+  - url: http://127.0.0.1:3000/createTag
+    name: createTag
+    meta:
+      id: req_3c4d9561d19f4715960c8f7d512e11f6
+      created: 1791380716518
+      modified: 1791382156305
+      isPrivate: false
+      description: ""
+      sortKey: -1791380716518
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nomeTag": "teste123321"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:3000/deleteTag
+    name: deleteTag
+    meta:
+      id: req_b7528f73928c49c2943f99a17f4abc23
+      created: 1791382074033
+      modified: 1791382305825
+      isPrivate: false
+      description: ""
+      sortKey: -1791380716418
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"idTag": 7
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:3000/updateTag
+    name: updateTag
+    meta:
+      id: req_9762253ee05643248ecfd3e4befe125d
+      created: 1791382168571
+      modified: 1791382637434
+      isPrivate: false
+      description: ""
+      sortKey: -1791380716368
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"newNameTag": "ser humaninho",
+        	"idTag": "8"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:3000/getOneTag
+    name: getOneTag
+    meta:
+      id: req_114de81a07b1483c993bcb73b17910ce
+      created: 1791382177451
+      modified: 1791383018338
+      isPrivate: false
+      description: ""
+      sortKey: -1791380716318
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"idTag": 9
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:3000/getAllTags
+    name: getAllTags
+    meta:
+      id: req_ed02e6a6dfac4445916706165980c8f9
+      created: 1791382185419
+      modified: 1791383049657
+      isPrivate: false
+      description: ""
+      sortKey: -1791380716268
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1791203167544
+    modified: 1791203371975
+  cookies:
+    - id: c66fb3d0-73ba-4526-9837-bd5a630a6be3
+      key: __Secure-BUCKET
+      value: CF0
+      domain: youtube.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+    - id: b8f8d82e-71d9-4d18-8283-392d076990c2
+      key: __Secure-YNID
+      value: 22.YT=eavnQ87fdN-guLwy_p2ZgFo94FoHarQMsrf_VOW8gig-NoFSqMx_jVeDOT33i0exSl5oIQiknjZnQ0LLbLwvkGgelBheIDEccZGUGmS828Pun3zHI4McIp9-R8mvSyCVEsRllVF-aU5OVaLfBSGuDhwC1qSVnW6_KF6-7cI9_88UYY4aC4IUs3S7YjpwCxJrP0rxUSehnWYM6YMVzmU9lElLydiRknKwC8qL_NlykETfLLtXl9oCZKnxseJdX9URHEujMZi1JBpSy53j4lFaxEM-7AwutUtg7gvpXN5GQ4cPY6ERr-bLzDxqbi8WRSPR-M0V0GD2eOnxAp7Phh_xDw
+      domain: youtube.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+    - id: c230ca47-ed03-41b8-8f82-5586f6396628
+      key: GPS
+      value: "1"
+      domain: youtube.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+    - id: 916a6005-5852-4389-9ef1-bd7304e4095f
+      key: YSC
+      value: IodEt2Jqac4
+      domain: youtube.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+    - id: 98b56618-2538-470b-82b3-1b451d4b8217
+      key: __Secure-YEC
+      value: ""
+      domain: youtube.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+    - id: 9dd5d4fd-d3b7-47d0-beac-08187059eb7d
+      key: VISITOR_INFO1_LIVE
+      value: hxmJ_EIemOw
+      domain: youtube.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+    - id: 18d9438b-b499-4f2d-8c58-26201edbb404
+      key: VISITOR_PRIVACY_METADATA
+      value: CgJCUhIEGgAgYg%3D%3D
+      domain: youtube.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+    - id: cad5a4c8-0321-4ab8-8ed9-a136f64374f4
+      key: __Secure-ROLLOUT_TOKEN
+      value: CO3mn9Lo8rOoXhCz6reE8KKXAxiz6reE8KKXAw%3D%3D
+      domain: youtube.com
+      path: /
+      secure: true
+      httpOnly: true
+      extensions:
+        - Partitioned
+      hostOnly: false
+    - id: 4fa98f79-5336-473e-b021-24fc1b7358b5
+      key: nfvdid
+      value: BQFmAAEBEFI-26UEqD70Qc_1RHEY_c9AJJOMgEtDMXHyyA2hb7Hk_U43N_utpbpyp37w9q5PGZhvZzV-gxQNdwgA3W_rtvlnTNl9haMCnJ8ubs6yZdsrYQ%3D%3D
+      domain: netflix.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: b85bf539-cdbf-4bb7-b258-00cf7c94c8b8
+      key: SecureNetflixId
+      value: v%3D3%26mac%3DAQEAEQABABTe6npmxsIFq6fE9V6Npm67lVXrgKAe06k.%26dt%3D1791203372204
+      domain: netflix.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+    - id: 99d4b09a-e650-443a-8644-cc9e7d6209ad
+      key: NetflixId
+      value: v%3D3%26ct%3DBgjHlOvcAxLBATqcOb2wl8tPat0JCWezQOHlF2K5Vcosf_incRxV4XNdEKJBfJ4sTLl8LKKS8afys4qXSlH_MjzZa1irBkliIKzF7JHmKbZfzUb7rLBBlrSAgjeXi0dV89DsufYf5mhq32pn2CcpkZ7ekrBfDMlTlCQlGzU0jlgG2Mri7xYjwN2Ugs2h6MkSje8dSFGPkUCMU15v9IVSvZS6gbQIg0NH-eSiAZZzEk7EJ59MJWV_GQaoecq5QQRbnQzlLNrqfkf3ovMYBiIOCgxDcw10H4xs1DNv-Z8.
+      domain: netflix.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+    - id: 565f9fb5-dcff-4101-82a3-66c1b9a42d9d
+      key: flwssn
+      value: 94d205b3-869d-468d-9e0a-107eca609883
+      domain: netflix.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 76178f89-2a99-440f-bf94-709f61f9c525
+      key: gsid
+      value: 9d916a0a-20a2-46e7-a8f2-616cfb08fb68
+      domain: netflix.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1791203167533
+    modified: 1791203167533
+    isPrivate: false

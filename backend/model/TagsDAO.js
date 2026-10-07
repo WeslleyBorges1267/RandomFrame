@@ -29,7 +29,7 @@ class Tags{
         return 0;
     }
 
-    selectOneTag(idTag) {
+    getOneTag(idTag) {
         const query = database.prepare(`
                 SELECT * FROM tags WHERE idTag = ?;
             `)
@@ -38,7 +38,7 @@ class Tags{
 
     }
 
-    selectAllTags() {
+    getAllTags() {
         const query = database.prepare(`
                 SELECT * FROM tags;
             `)
