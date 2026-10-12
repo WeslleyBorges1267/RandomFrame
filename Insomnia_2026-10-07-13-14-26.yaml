@@ -2,142 +2,325 @@ type: collection.insomnia.rest/5.0
 schema_version: "5.1"
 name: Scratch Pad
 meta:
-  id: wrk_scratchpad
-  created: 1791203160396
-  modified: 1791203160396
+  id: wrk_40b805e518d84a55942142cac151a533
+  created: 1791821446853
+  modified: 1791821446853
   description: ""
 collection:
-  - url: http://127.0.0.1:3000/createTag
-    name: createTag
+  - name: Tags_CRUD
     meta:
-      id: req_3c4d9561d19f4715960c8f7d512e11f6
-      created: 1791380716518
-      modified: 1791382156305
-      isPrivate: false
+      id: fld_7a7cdddc77ec408e935f0e382148fb69
+      created: 1791822166936
+      modified: 1791822166936
+      sortKey: -1791822166936
       description: ""
-      sortKey: -1791380716518
-    method: GET
-    body:
-      mimeType: application/json
-      text: |-
-        {
-        	"nomeTag": "teste123321"
-        }
-    headers:
-      - name: Content-Type
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-  - url: http://127.0.0.1:3000/deleteTag
-    name: deleteTag
+    children:
+      - url: http://127.0.0.1:3000/createTag
+        name: createTag
+        meta:
+          id: req_0a45f7c3b8e446d488947bd8fe78dd21
+          created: 1791380716518
+          modified: 1791839412730
+          isPrivate: false
+          description: ""
+          sortKey: -1791822171331
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nomeTag": "teste123321"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:3000/deleteTag
+        name: deleteTag
+        meta:
+          id: req_a30741357ee74fbf997db4539128f9d0
+          created: 1791382074033
+          modified: 1791822200090
+          isPrivate: false
+          description: ""
+          sortKey: -1791822171431
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"idTag": 7
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:3000/updateTag
+        name: updateTag
+        meta:
+          id: req_a1ad3ccf4702431fb743f76da8b6f1ef
+          created: 1791382168571
+          modified: 1791822174350
+          isPrivate: false
+          description: ""
+          sortKey: -1791822171231
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"newNameTag": "ser humaninho",
+            	"idTag": "8"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:3000/getOneTag
+        name: getOneTag
+        meta:
+          id: req_ef7cd7cdf4e849bdaf58937935b6d6e3
+          created: 1791382177451
+          modified: 1791822175581
+          isPrivate: false
+          description: ""
+          sortKey: -1791822171131
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"idTag": 9
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:3000/getAllTags
+        name: getAllTags
+        meta:
+          id: req_e27ffb467e9d4a6aa598fc7262c81b79
+          created: 1791382185419
+          modified: 1791840100471
+          isPrivate: false
+          description: ""
+          sortKey: -1791822171181
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Imagens_CRUD
     meta:
-      id: req_b7528f73928c49c2943f99a17f4abc23
-      created: 1791382074033
-      modified: 1791382305825
-      isPrivate: false
+      id: fld_88b7ac4e95bf4c198807874bee81b687
+      created: 1791822188652
+      modified: 1791822192844
+      sortKey: -1791822188652
       description: ""
-      sortKey: -1791380716418
-    method: GET
-    body:
-      mimeType: application/json
-      text: |-
-        {
-        	"idTag": 7
-        }
-    headers:
-      - name: Content-Type
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-  - url: http://127.0.0.1:3000/updateTag
-    name: updateTag
-    meta:
-      id: req_9762253ee05643248ecfd3e4befe125d
-      created: 1791382168571
-      modified: 1791382637434
-      isPrivate: false
-      description: ""
-      sortKey: -1791380716368
-    method: GET
-    body:
-      mimeType: application/json
-      text: |-
-        {
-        	"newNameTag": "ser humaninho",
-        	"idTag": "8"
-        }
-    headers:
-      - name: Content-Type
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-  - url: http://127.0.0.1:3000/getOneTag
-    name: getOneTag
-    meta:
-      id: req_114de81a07b1483c993bcb73b17910ce
-      created: 1791382177451
-      modified: 1791383018338
-      isPrivate: false
-      description: ""
-      sortKey: -1791380716318
-    method: GET
-    body:
-      mimeType: application/json
-      text: |-
-        {
-        	"idTag": 9
-        }
-    headers:
-      - name: Content-Type
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-  - url: http://127.0.0.1:3000/getAllTags
-    name: getAllTags
-    meta:
-      id: req_ed02e6a6dfac4445916706165980c8f9
-      created: 1791382185419
-      modified: 1791383049657
-      isPrivate: false
-      description: ""
-      sortKey: -1791380716268
-    method: GET
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
+    children:
+      - url: http://127.0.0.1:3000/createImage
+        name: createImage
+        meta:
+          id: req_95ab7451aa614738a5d714721ca0efa9
+          created: 1791822195937
+          modified: 1791844159273
+          isPrivate: false
+          description: ""
+          sortKey: -1791822195937
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: tags_image
+              value: 1,3,5,6,8
+              description: ""
+              disabled: false
+              multiline: false
+              type: text
+            - name: file_image
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:3000/deleteImage
+        name: deleteImage
+        meta:
+          id: req_b783cb7e677345f3942592bd982f5d5a
+          created: 1791822227855
+          modified: 1791822553075
+          isPrivate: false
+          description: ""
+          sortKey: -1791822183684
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"id_imagem": 1
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:3000/updateImage
+        name: updateImage
+        meta:
+          id: req_af44dced9f344ce7925881e80b1b2d37
+          created: 1791822244779
+          modified: 1791822733045
+          isPrivate: false
+          description: ""
+          sortKey: -1791822177557.5
+        method: GET
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: new_image
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+            - name: id_imagem
+              value: "1"
+              description: ""
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:3000/getOneImage
+        name: getOneImage
+        meta:
+          id: req_9a4e61ebd9da4f74a00237f8ce926d05
+          created: 1791822255394
+          modified: 1791822754218
+          isPrivate: false
+          description: ""
+          sortKey: -1791822174494.25
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"id_imagem": 1
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:3000/getAllImages
+        name: getAllImages
+        meta:
+          id: req_f5d96b01d6544a9097a088c5dc741a82
+          created: 1791822265555
+          modified: 1791822425031
+          isPrivate: false
+          description: ""
+          sortKey: -1791822172962.625
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:3000/getAllTagImages
+        name: getAllTagImages
+        meta:
+          id: req_c782265b39e04b9dbaec11ffb3a8376a
+          created: 1791822316367
+          modified: 1791822772169
+          isPrivate: false
+          description: ""
+          sortKey: -1791822172196.8125
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"id_tag": 1
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
-    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    id: jar_dba29e1db630413ba9097bd46b19d562
     created: 1791203167544
     modified: 1791203371975
   cookies:
@@ -250,7 +433,7 @@ cookieJar:
 environments:
   name: Base Environment
   meta:
-    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    id: env_d5c0aeee624c4059b51bd192d1941e03
     created: 1791203167533
     modified: 1791203167533
     isPrivate: false
