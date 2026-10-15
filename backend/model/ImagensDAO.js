@@ -14,6 +14,16 @@ class Image{
         return newIdImage;
     }
 
+    deleteImage(id_imagem) {
+        const query = database.prepare(`
+            DELETE FROM imagens_tags WHERE id_imagem = ?;
+            DELETE FROM imagens WHERE id_imagem = ?;
+        `);
+        
+        const result = query.run(id_imagem);
+        query.close();
+    }
+
 }
 
 module.exports = Image;

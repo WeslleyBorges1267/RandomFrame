@@ -24,7 +24,7 @@ const getAllTags = require('./controller/getAllTags.js');
 app.use('/getAllTags', getAllTags);
 
 // Images
-const createImage = require(`./controller/createImage.js`);
+const createImage = require(`./controller/imageCRUD/createImage.js`);
 app.use(`/createImage`, createImage);
 
 
