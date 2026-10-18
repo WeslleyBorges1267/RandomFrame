@@ -27,6 +27,9 @@ app.use('/getAllTags', getAllTags);
 const createImage = require(`./controller/imageCRUD/createImage.js`);
 app.use(`/createImage`, createImage);
 
+const deleteImage = require('./controller/imageCRUD/deleteImage.js');
+app.use('/deleteImage', deleteImage);
+
 
 app.get(`/`, (req, res) => {
     res.status(200).json("Hello world");

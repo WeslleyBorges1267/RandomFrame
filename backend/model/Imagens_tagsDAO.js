@@ -14,6 +14,11 @@ class Imagens_tags{
         return newIdImage;
     }
 
+    updateImageTag(id_image, array_tags) {
+        // Código irá apagar todas as tags linkadas a imagem
+        // e então irá criar novas na tabela imagens_tags
+    }
+
 }
 
 module.exports = Imagens_tags;
