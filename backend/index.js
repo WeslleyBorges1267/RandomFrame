@@ -1,6 +1,7 @@
 const express = require(`express`);
 const app = express();
 const cors = require('cors');
+const path = require('path');
 require('dotenv').config();
 
 app.use(express.json());
@@ -29,6 +30,13 @@ app.use(`/createImage`, createImage);
 
 const deleteImage = require('./controller/imageCRUD/deleteImage.js');
 app.use('/deleteImage', deleteImage);
+
+const updateImage = require('./controller/imageCRUD/updateImageTags.js');
+app.use('/updateImage', updateImage);
+
+app.use('/imagens', express.static(
+    path.join(__dirname, '/images/')
+));
 
 
 app.get(`/`, (req, res) => {
