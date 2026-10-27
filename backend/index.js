@@ -34,6 +34,15 @@ app.use('/deleteImage', deleteImage);
 const updateImage = require('./controller/imageCRUD/updateImageTags.js');
 app.use('/updateImage', updateImage);
 
+const getOneImage = require('./controller/imageCRUD/getOneImage.js');
+app.use('/getOneImage', getOneImage);
+
+const getAllImages = require('./controller/imageCRUD/getAllImages.js');
+app.use('/getAllImages', getAllImages);
+
+const getAllImagesTag = require('./controller/imageCRUD/getAllImagesTag.js');
+app.use('/getAllImagesTag', getAllImagesTag);
+
 app.use('/imagens', express.static(
     path.join(__dirname, '/images/')
 ));

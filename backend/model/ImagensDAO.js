@@ -39,6 +39,14 @@ class Image{
 
     }
 
+    getAllImages() {
+        const query = database.prepare(`
+            SELECT * FROM imagens ORDER BY id_imagem DESC;
+                `)
+        const result = query.all()
+        return result;
+    }
+
 }
 
 module.exports = Image;

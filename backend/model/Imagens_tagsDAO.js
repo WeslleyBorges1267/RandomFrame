@@ -33,6 +33,15 @@ class Imagens_tags{
         // e então irá criar novas na tabela imagens_tags
     }
 
+    getAllImagesTag(idTag) {
+        const query = database.prepare(`
+            SELECT imagens.id_imagem, imagens.extensao_imagem FROM imagens_tags INNER JOIN imagens ON imagens.id_imagem = imagens_tags.id_imagem WHERE imagens_tags.id_tag = ?
+            `)
+
+        const result = query.all(idTag);
+        return result;
+    }
+
 }
 
 module.exports = Imagens_tags;
