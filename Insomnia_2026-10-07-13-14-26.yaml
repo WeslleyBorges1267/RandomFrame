@@ -218,16 +218,16 @@ collection:
         meta:
           id: req_9a4e61ebd9da4f74a00237f8ce926d05
           created: 1791822255394
-          modified: 1792961971469
+          modified: 1793136450998
           isPrivate: false
           description: ""
           sortKey: -1791822174494.25
-        method: GET
+        method: POST
         body:
           mimeType: application/json
           text: |-
             {
-            	"id_imagem": 1
+            	"id_imagem": 32
             }
         headers:
           - name: Content-Type
@@ -245,11 +245,20 @@ collection:
         meta:
           id: req_f5d96b01d6544a9097a088c5dc741a82
           created: 1791822265555
-          modified: 1791822425031
+          modified: 1793136517829
           isPrivate: false
           description: ""
           sortKey: -1791822172962.625
-        method: GET
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"id_imagem": 32
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -263,11 +272,11 @@ collection:
         meta:
           id: req_c782265b39e04b9dbaec11ffb3a8376a
           created: 1791822316367
-          modified: 1791822772169
+          modified: 1793136496821
           isPrivate: false
           description: ""
           sortKey: -1791822172196.8125
-        method: GET
+        method: POST
         body:
           mimeType: application/json
           text: |-
@@ -301,6 +310,51 @@ collection:
             {
             	"id_image": "32",
             	"array_tags": [14, 15, 16, 99]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:3000/imagens/29.jpeg
+        name: ImagensRequest
+        meta:
+          id: req_0890a978cb8747a0bcbd0beaec5bad24
+          created: 1793135452789
+          modified: 1793135532787
+          isPrivate: false
+          description: ""
+          sortKey: -1793135452789
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1:3000/getAllImagesTag
+        name: getAllImagesTag
+        meta:
+          id: req_806287dd23684b608d5caf0cb70fd530
+          created: 1793137758211
+          modified: 1793138059157
+          isPrivate: false
+          description: ""
+          sortKey: -1791822171813.9062
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"id_tag": 16
             }
         headers:
           - name: Content-Type
